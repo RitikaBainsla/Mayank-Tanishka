@@ -246,7 +246,7 @@ music.onclick=()=>{
  else{audio.pause();music.textContent='♪'}
 };
 
-const order=['1','2','SCRATCH','3','4','6','7','8'];
+const order=['1','2','SCRATCH','3','4','NEW5','6','7','8'];
 const host=document.getElementById('slides');
 const scratchVideo=document.getElementById('scratchVideo');
 if(scratchVideo){
@@ -269,8 +269,8 @@ function makePetals(layer){
 order.forEach(item=>{
  if(item==='SCRATCH') return;
  const s=document.createElement('section');s.className='slide';s.dataset.slide=item;
- const poster=document.createElement('img');poster.className='poster';poster.src=item+'-poster.jpg';poster.alt='';
- const v=document.createElement('video');v.src=item+'.mp4';v.playsInline=true;v.muted=true;v.preload='auto';v.setAttribute('webkit-playsinline','');
+ const poster=document.createElement('img');poster.className='poster';poster.src=(item==='NEW5'?'5-new-poster.jpg':item+'-poster.jpg');poster.alt='';
+ const v=document.createElement('video');v.src=(item==='NEW5'?'5-new.mp4':item+'.mp4');v.playsInline=true;v.muted=true;v.preload='auto';v.setAttribute('webkit-playsinline','');
  v.playbackRate=.65;
  s.appendChild(poster);s.appendChild(v);
  const watermark=document.createElement('img');
