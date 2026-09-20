@@ -157,28 +157,6 @@ html, body {
 @keyframes scrollRing{0%,100%{opacity:.2;transform:scale(1)}50%{opacity:.75;transform:scale(1.06)}}
 
 
-.site-watermark{
- position:absolute !important;
- inset:0 !important;
- width:100% !important;
- height:100% !important;
- object-fit:cover !important;
- z-index:5 !important;
- pointer-events:none !important;
- user-select:none !important;
-}
-
-
-.site-watermark{
- position:absolute !important;
- inset:0 !important;
- width:100% !important;
- height:100% !important;
- object-fit:cover !important;
- z-index:5 !important;
- pointer-events:none !important;
- user-select:none !important;
-}
 
 </style>
 </head>
@@ -273,12 +251,6 @@ order.forEach(item=>{
  const v=document.createElement('video');v.src=(item==='NEW5'?'5-new.mp4':item+'.mp4');v.playsInline=true;v.muted=true;v.preload='auto';v.setAttribute('webkit-playsinline','');
  v.playbackRate=.65;
  s.appendChild(poster);s.appendChild(v);
- const watermark=document.createElement('img');
- watermark.className='site-watermark';
- watermark.src='Watermark.png';
- watermark.alt='';
- watermark.setAttribute('aria-hidden','true');
- s.appendChild(watermark);
  if(item==='1'){
   const scroll=document.createElement('div');
   scroll.className='scroll-down';

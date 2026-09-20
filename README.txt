@@ -30,4 +30,4 @@ Place your legally obtained audio file in this folder with exactly this filename
 Pihu-Bole-Flute.mp3
 Then it will play from the opening tap and loop softly.
 
-Updated: replaced invitation videos with user-supplied 1-8 videos 
+Updated: replaced invitation videos with user-supplied 1-8 videos and restored Watermark.png overlay.
